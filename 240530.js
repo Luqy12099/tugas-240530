@@ -93,7 +93,7 @@ const redeemProducts = () =>{
     for(let i = 0; i < products.length; i++){
         if(availablePoints >= products[i].points){
             availablePoints -= products[i].points;
-            totalSpent += products[i].points;
+            totalSpent += products[i].price;
             purchasedProducts.push(products[i].name);
         };
     };
